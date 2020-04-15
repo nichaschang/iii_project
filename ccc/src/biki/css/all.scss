@@ -1,0 +1,108 @@
+@import '../../css/variables.scss';
+
+// h5 {
+//   color: $black;
+// }
+
+
+.bk-hover{
+  transition: .3s;
+
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+h6.bk-white {
+  color: $white;
+}
+
+.bk-txt-small {
+  font-size: $font-xs;
+}
+
+.bk-btn-white {
+  @include buttonTheme(whiteBorderedStyle);
+}
+
+.bk-btn-group {
+  button {
+    margin-right: $spacing;
+  }
+}
+
+.bk-btn-black {
+  @include buttonTheme(blackStyle);
+  transition: 0.3s;
+
+  // &:hover {
+  //   background: $blue;
+  //   border-color: $blue;
+  // }
+}
+
+.bk-btn-black-bordered {
+  @include buttonTheme(borderedStyle);
+}
+
+.bk-btn-grey {
+  @include buttonTheme(greyStyle);
+  border-color: $grey;
+}
+
+.bk-btn-grey-bordered {
+  @include buttonTheme(borderedStyle);
+  color: $grey;
+  border-color: $grey;
+}
+
+.bk-icon {
+  font-size: 1.3rem;
+}
+
+//sweet alert
+.bk-swl-popup {
+  border-radius: 0 !important;
+
+  .bk-swl-content {
+    color: $black !important;
+    font-size: $font-m !important;
+  }
+
+  .bk-swl-icon.swal2-warning {
+    border-color: $orange;
+    color: $orange;
+  }
+
+  .bk-swl-icon.swal2-success {
+    border-color: $blue;
+    color: $blue;
+
+    .swal2-success-ring {
+      border-color: $blue;
+    }
+    span[class^='swal2-success-line'] {
+      background-color: $blue;
+    }
+  }
+
+  button {
+    margin: $spacing/2;
+  }
+
+  .bk-swl-confirm-button {
+    @include buttonTheme(blackStyle);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .bk-swl-cancel-button {
+    @include buttonTheme(borderedStyle);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

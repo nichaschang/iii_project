@@ -1,0 +1,62 @@
+@import '../../css/variables.scss';
+
+
+/*ShopCartLike*/
+.Mao-ul-bg-white {
+  width: 900px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px 0px 50px 0px;
+}
+.Mao-ul-bg-none {
+  width: 900px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+}
+.Mao-CartNoItem {
+  height: 505px;
+  width: 1000px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: $white;
+  padding: 30px;
+  text-align: center;
+}
+.Mao-CartNoItem h3 {
+  color: #666;
+  padding: 15px;
+  border-bottom: 1px solid #666;
+}
+
+// for like color
+.Mao-like-red {
+  fill: #e55;
+  stroke: #e55;
+}
+
+//iCon
+
+.Mao-icon-box{
+  position: relative;
+}
+.Mao-icon-text{
+  position: absolute;
+  background: $blue;
+  color: $white;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  top:0%;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+}

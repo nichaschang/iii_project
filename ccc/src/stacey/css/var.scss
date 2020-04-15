@@ -1,0 +1,38 @@
+$backGrey: #dfdfdf;
+
+
+@mixin couponForMobile {
+  @media screen and (max-width: 576px) {
+    .container {
+      max-width: 100%;
+    }
+    .wrap {
+      padding: 0 15px;
+    }
+    .bread {
+      h3 {
+        text-align: left;
+      }
+      .row {
+        align-items: center;
+      }
+      .mobileFilter {
+        display: flex;
+      }
+    }
+    .sty-sideFilter {
+      display: none;
+    }
+    .coupon {
+      padding: 0;
+    }
+  }
+}
+@mixin pad {
+  @media screen and (max-width: 768px) {
+  }
+}
+@mixin lg {
+  @media screen and (max-width: 992px) {
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../css/variables.scss';
+
+.Mao-form-outer-box {
+  width: 1300px;
+  display: flex;
+  margin: 100px auto;
+  margin-bottom: 150px;
+}
+.Mao-orderInfo-form-contain-box{
+  padding:16px 24px;
+  width: 950px;
+  // height: calc( 100% + 40px);
+  border: 1px solid #ddd;
+  background: $white;
+
+}
+#creditCardInfo {
+  opacity: 1;
+}
+.Mao-prompt-word {
+  color: #f00;
+  margin: 15px 0px;
+}
+.Mao-form-box {
+  width: 950px;
+  background: $white;
+  padding: 30px;
+}
+
+.Mao-form-type-box {
+  margin: 30px 0px;
+}
+
+.Mao-form-btn-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 500px;
+  margin: 30px auto;
+  transition: 0.5s;
+  //   @include buttonTheme(blackStyle);
+}
+.Mao-form-btn-send:hover {
+  color: $white;
+  opacity: 0.7;
+}
+
+.Mao-form-input-text {
+  display: none;
+  border: none;
+  border-bottom: 1px solid $grey;
+}
+
+.Mao-order-Info-btn{
+  width:30%;
+  padding:16px;
+  margin:14px 20px;
+  text-align: center;
+} 
+
+.Mao-order-btn-color-white{
+  background: $white;
+  border:1px solid $black;
+  color: $black;
+  &:hover{
+    color: $black;
+  }
+}
+.Mao-order-btn-color-black{
+  background: $black;
+  border:1px solid $black;
+  &:hover{
+    color:$white
+  }
+  color: $white;
+}

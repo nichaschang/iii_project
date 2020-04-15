@@ -1,0 +1,803 @@
+.bk-bigitem-wrapper {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+
+  div:focus {
+    outline: none;
+  }
+}
+
+.chin-productdetails {
+  display: flex;
+}
+.chin-bigitem {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  // width: 600px;
+  // height: 600px;
+  img {
+    width: 100%;
+    height: 100%;
+    // width: 600px;
+    // height: 600px;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.chin-cir {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: none;
+}
+.chin-cir2 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: none;
+}
+.chin-arr {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: -6%;
+  margin: 4px 0 0 4px;
+  width: 40px;
+  height: 40px;
+}
+.chin-arr2 {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  right: -6%;
+  margin: 4px 0 0 5px;
+  width: 40px;
+  height: 40px;
+}
+.chin-hiarr {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: -4%;
+  margin: 4px 0 0 4px;
+  width: 50px;
+  height: 50px;
+}
+.chin-hiarr2 {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  right: -4%;
+  margin: 4px 0 0 5px;
+  width: 50px;
+  height: 50px;
+}
+.chin-smallitem {
+  position: relative;
+  width: 600px;
+  padding: 0 20px;
+  margin-top: 35px;
+}
+.chin-smallitem-img {
+  width: 130px;
+  height: 130px;
+  margin: 0 3px 3px 5px;
+}
+.chin-productname {
+  margin-left: 100px;
+}
+.chin-productname span {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.chin-productname p {
+  font-size: 18px;
+  margin-top: 50px;
+}
+.chin-productname h6 {
+  font-size: 16px;
+  color: #a0a0a0;
+}
+.chin-productname h5 {
+  font-size: 28px;
+}
+.chin-productname h4 {
+  color: #0ac3ae;
+  font-size: 30px;
+}
+.chin-starimg {
+  padding: 5px;
+  margin: 25px 4px 30px 4px;
+}
+.chin-starimg span {
+  font-size: 20px;
+}
+.chin-myfavourite-shopping {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chin-myfavourite {
+  display: flex;
+  justify-content: space-between;
+}
+.chin-myfavourite img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.chin-myfavourite span {
+  margin: 0 45px;
+  font-size: 26px;
+}
+.chin-shopping {
+  display: flex;
+}
+.chin-shopping button:nth-child(1) {
+  width: 220px;
+  height: 45px;
+  background: #050505;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.chin-shopping a {
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 1px solid #050505;
+  font-size: 16px;
+  font-weight: bold;
+  color: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chin-favourite {
+  background: none;
+  border: none;
+  color: #050505;
+  margin-top: 30px;
+  width: 220px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chin-favourite svg {
+  width: 22px;
+  height: 22px;
+}
+.chin-favourite span {
+  font-size: 18px;
+}
+.chin-productdescription-technicalspecifications {
+  height: 900px;
+  background: #ffffff;
+  margin-top: 130px;
+  padding-top: 70px;
+}
+.chin-productdescription p {
+  font-size: 18px;
+  width: 740px;
+  text-align: left;
+  margin: 80px auto;
+}
+.chin-productdescription h3 {
+  text-align: center;
+}
+.chin-technicalspecifications {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.chin-technicalspecifications ul {
+  list-style: none;
+}
+.chin-size-digital {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.chin-size li {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.chin-digital li {
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+.chin-memory-narrative-p {
+  padding-left: 90px;
+  width: 450px;
+}
+.chin-memory-narrative-p p {
+  font-size: 15px;
+}
+.chin-memory-narrative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chin-memory li {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.chin-narrative li {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.chin-usercomment-fractionalstars {
+  margin-top: 80px;
+}
+.chin-usercomment-fractionalstars h3 {
+  text-align: center;
+}
+.chin-usercomment {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.chin-fractionalstars {
+  display: flex;
+}
+.chin-fractional {
+  margin-right: 65px;
+}
+.chin-fractional img {
+  width: 20px;
+  height: 20px;
+}
+.chin-fractional p {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.chin-fractional p:nth-child(7) {
+  margin-top: 12px;
+  font-size: 13px;
+  text-align: center;
+}
+.chin-commentstars {
+  margin-top: 5px;
+}
+.chin-commentstars img {
+  margin: 2px;
+  width: 20px;
+  height: 20px;
+}
+.chin-sort-discuss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chin-discuss button {
+  width: 215px;
+  height: 50px;
+  background: none;
+  border: 1px solid #050505;
+  font-size: 16px;
+  font-weight: bold;
+  color: #050505;
+}
+.chin-discusspost {
+  display: none;
+  margin: 40px 0;
+  height: 0px;
+  background: #fff;
+  transition: 0.3s;
+  padding-top: 40px;
+}
+.chin-disclopsaa {
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chin-disclopsaa p {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.chin-disclopsaa input {
+  width: 900px;
+}
+.chin-disclopsaa textarea {
+  width: 900px;
+  height: 250px;
+  transition: 0.5s;
+  resize: none;
+}
+.chin-loopkpi {
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+  margin: 35px auto 0;
+}
+.chin-loopkpi button:nth-child(1) {
+  width: 120px;
+  background: #a0a0a0;
+  border: none;
+}
+.chin-loopkpi button:nth-child(2) {
+  width: 220px;
+  background: #0ac3ae;
+  border: none;
+  margin-left: 20px;
+}
+.chin-usercomment-fractionalstars.active {
+  .chin-discusspost {
+    display: block;
+    height: 660px;
+    background: #fff;
+  }
+}
+.chin-sortspan {
+  margin: 0 auto;
+  width: 885px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #050505;
+  font-size: 16px;
+  font-weight: bold;
+}
+.chin-sortspan button {
+  background: none;
+  border: none;
+  margin: 25px;
+  color: #050505;
+}
+.chin-sortspan img {
+  padding: 0 0 5px 25px;
+}
+.chin-avatar-name-p {
+  width: 885px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0;
+}
+.chin-avatar-name-p p {
+  padding: 30px 10px 20px 20px;
+}
+.chin-avatar-name-p h1 {
+  padding: 30px 10px 20px 20px;
+  font-size: 22px;
+}
+.chin-avatar-name-p a {
+  text-align: right;
+}
+.chin-avatar-name {
+  margin-top: 65px;
+  display: flex;
+}
+.chin-avatar-name img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+.chin-avatar-name h6 {
+  margin: 10px 0 5px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #050505;
+}
+.chin-avatar-name span {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+.chin-avatar {
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 25px;
+  }
+}
+.chin-reply {
+  display: flex;
+  justify-content: flex-end;
+}
+.chin-reply a {
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-left: 30px;
+}
+.chin-reply a:hover {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+.chin-historicalrecord {
+  width: 300px;
+  margin: 90px auto 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.chin-historicalrecord.active {
+  .chin-hisrel1 {
+    color: #a0a0a0;
+  }
+  .chin-hisrel2 {
+    color: #050505;
+  }
+  .chin-borderbottom {
+    left: 70%;
+  }
+}
+.chin-borderbottom {
+  width: 88px;
+  height: 3px;
+  border-bottom: 3px solid #0ac3ae;
+  position: absolute;
+  left: 21%;
+  bottom: -20%;
+  transition: 0.5s;
+}
+.chin-hisrel1 {
+  margin-left: 60px;
+  color: #050505;
+  font-size: 22px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.chin-hisrel2 {
+  margin-left: 60px;
+  color: #a0a0a0;
+  font-size: 22px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.chin-relatedproducts {
+  position: relative;
+  margin: 60px 0 160px 0;
+}
+.chin-commodity2 {
+  margin-left: 3px;
+}
+.chin-commodity-item2 {
+  padding-top: 1px;
+  margin: 15px;
+  width: 280px;
+  height: 400px;
+  background: #fff;
+  p {
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #050505;
+    text-align: center;
+  }
+}
+.chin-commodity-item2 h6 {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a0a0a0;
+}
+.chin-commodity-item2 h5 {
+  font-size: 17px;
+  margin: 0;
+  color: #0dd2c5;
+  text-align: center;
+}
+.chin-commodity-item2:hover {
+  box-shadow: 0px 0px 9px #a0a0a0;
+}
+.chin-star-heart-bag2 {
+  list-style: none;
+  display: flex;
+  margin: 25px 0 0 25px;
+  padding: 0;
+  align-items: flex-start;
+  position: relative;
+}
+.chin-star-heart-bag2 :nth-child(1) > .chin-star2 {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  color: #ffdd00;
+}
+.chin-commodity-item2:hover .chin-star-heart-bag2 :nth-child(1) > .chin-star2 {
+  opacity: 1;
+}
+.chin-star-heart-bag2 :nth-child(2) > .chin-star2 {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item2:hover .chin-star-heart-bag2 :nth-child(2) > .chin-star2 {
+  opacity: 1;
+  left: 20px;
+}
+.chin-star-heart-bag2 :nth-child(3) > .chin-star2 {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item2:hover .chin-star-heart-bag2 :nth-child(3) > .chin-star2 {
+  opacity: 1;
+  left: 40px;
+}
+.chin-star-heart-bag2 :nth-child(4) > .chin-star2 {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item2:hover .chin-star-heart-bag2 :nth-child(4) > .chin-star2 {
+  opacity: 1;
+  left: 60px;
+}
+.chin-star-heart-bag2 :nth-child(5) > .chin-star2 {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item2:hover .chin-star-heart-bag2 :nth-child(5) > .chin-star2 {
+  opacity: 1;
+  left: 80px;
+}
+.chin-bag2 {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.chin-commodity-item2:hover .chin-bag2 {
+  opacity: 1;
+  top: 30px;
+}
+.chin-heart2 {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.chin-commodity-item2:hover .chin-heart2 {
+  opacity: 1;
+}
+.chin-watch2 {
+  margin: 10px 35px 15px 35px;
+  width: 210px;
+  height: 210px;
+}
+.chin-heart-bag2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------RWD-----------------------------*/
+.chin-rwd-avatar-circle-circle {
+  display: none;
+}
+.chin-sliderRWD {
+  display: none;
+}
+@media (max-width: 576px) {
+  .chin-productdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chin-bigitem {
+    display: none;
+  }
+  .chin-sliderRWD {
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+  .chin-sm-RWD {
+    width: 300px;
+    height: 300px;
+  }
+  .chin-smallitem {
+    display: none;
+  }
+  .chin-productname {
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chin-productname h5 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .chin-myfavourite-shopping {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .chin-myfavourite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chin-productdescription-technicalspecifications {
+    background: none;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  .chin-productdescription p {
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .chin-technicalspecifications {
+    display: flex;
+    flex-direction: column;
+  }
+  .chin-size-digital {
+    width: 100%;
+  }
+  .chin-memory-narrative-p {
+    padding: 0;
+    width: 100%;
+  }
+  .chin-memory-narrative {
+    justify-content: flex-start;
+  }
+  .chin-narrative {
+    margin-left: 50px;
+  }
+  .chin-usercomment-fractionalstars {
+    margin-top: 20px;
+  }
+  .chin-discuss {
+    display: none;
+  }
+  .chin-commentstars {
+    display: none;
+  }
+  .chin-usercomment {
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: 1px solid #050505;
+  }
+  .chin-fractional {
+    display: flex;
+    align-items: center;
+  }
+  .chin-fractional p {
+    margin: 0 15px;
+  }
+  .chin-sortspan {
+    display: none;
+  }
+  .chin-avatar-name-p {
+    width: 100%;
+  }
+  .chin-avatar-name {
+    align-items: center;
+  }
+  .chin-rwd-avatar-circle-circle {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+  }
+  .chin-rwd-avatar-circle {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #050505;
+    border-radius: 50%;
+    margin: 2px;
+  }
+  .chin-historicalrecord a {
+    margin: 0;
+  }
+  .chin-historicalrecord {
+    justify-content: space-evenly;
+  }
+
+  .chin-relatedproducts button:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -4%;
+    top: 60%;
+  }
+  .chin-relatedproducts button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -4%;
+    top: 60%;
+  }
+  .chin-relatedproducts button img {
+    width: 30px;
+    height: 30px;
+  }
+  .chin-watch2 {
+    margin: 0;
+    width: 115px;
+    height: 150px;
+  }
+  .chin-commodity-item2 {
+    background: none;
+    margin: 0;
+  }
+  .chin-commodity-item2 h6 {
+    font-size: 12px;
+  }
+  .chin-commodity-item2 h5 {
+    font-size: 15px;
+  }
+  .chin-commodity-item2 p {
+    font-size: 12px;
+  }
+  .chin-commodity-item2:hover {
+    box-shadow: unset !important;
+  }
+  .chin-star-heart-bag2 :nth-child(1) > .chin-star2 {
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+  }
+  .chin-star2 {
+    display: none;
+  }
+  .chin-bag2 {
+    display: none;
+  }
+  .chin-heart2 {
+    position: absolute;
+    top: 0;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
+}

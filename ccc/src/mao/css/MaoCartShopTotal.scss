@@ -1,0 +1,515 @@
+@import '../../css/variables.scss';
+/* for CartShopTotal */
+.Mao-total-box {
+  transition: 0s;
+  opacity: 1;
+  height: 1120px;
+  width: 300px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  transition: 0.1s;
+  border: 1px solid #eee;
+  background: $white;
+  // z-index: -1;
+}
+.Mao-total-box-title {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0px;
+}
+.Mao-total-box-title-info {
+  font-size: 15px;
+  // z-index: -1;
+}
+.Mao-total-box-title-info div {
+  margin-bottom: 16px;
+}
+.Mao-total-box-title-coupon div {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.Mao-total-box-title-coupon input {
+  margin-left: 10px;
+  width: 180px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+.Mao-total-go-shop {
+  position: relative;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mao-total-box-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 45px;
+  padding: 15px;
+  border: 1px solid $grey;
+  margin: 15px 0px;
+  color: $black;
+  position: relative;
+  overflow: hidden;
+}
+
+.Mao-total-box-btn:hover {
+  color: $black;
+  background: #eee;
+  border: 1px solid #eee;
+}
+.Mao-total-box-btn:hover .Mao-total-show {
+  color: $black;
+  opacity: 0.2;
+  width: 120%;
+}
+
+.Mao-total-show {
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+  width: 0%;
+  height: 200px;
+  background: #999;
+  transform: skewX(-20deg);
+}
+
+.Mao-total-box-btn-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 45px;
+  border: 1px solid $grey;
+  margin: 15px 0px;
+  position: relative;
+  overflow: hidden;
+  color: $white;
+  background: $black;
+}
+.Mao-total-box-btn-black:hover {
+  text-decoration: none;
+  color: $white;
+  background: $black;
+}
+.Mao-total-box-btn-black:hover .Mao-total-show-black {
+  color: $white;
+  opacity: 0.5;
+  width: 120%;
+}
+.Mao-total-show-black {
+  position: absolute;
+  transition: 0.6s;
+  opacity: 0;
+  width: 0%;
+  height: 200px;
+  background: #888;
+  transform: skewX(-20deg);
+}
+
+.Mao-total-box-btn-border-b {
+  margin: 0;
+  color: $black;
+  border: none;
+  border-bottom: 1px solid $grey;
+  transition: 0.3s;
+}
+.Mao-total-box-btn-border-b:hover {
+  color: $black;
+  border-bottom: 1px solid $blue;
+}
+.Mao-total-box-btn:hover {
+  transition: 0.3s;
+  text-decoration: none;
+}
+.Mao-productSlide-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1300px;
+  padding: 10px;
+  margin: 90px 0px;
+}
+.Mao-slide {
+  opacity: 1;
+}
+.Mao-slideRWD {
+  opacity: 0;
+}
+.Mao-productSlide-title {
+  margin: 10px auto;
+  padding: 15px;
+  letter-spacing: 15px;
+  text-align: center;
+  width: 20%;
+  border-bottom: 3px solid $grey;
+}
+.Mao-Total-Box-none {
+  background: none;
+  height: 400px;
+  width: 300px;
+}
+.Mao-Like-img {
+  padding: 0;
+  // margin: 50px 0;
+  width: 1000px;
+  height: 460px;
+  box-shadow: 6px 6px 10px #aaa;
+}
+.Mao-Like-box {
+  margin-top: 50px;
+  width: 900px;
+}
+.Mao-shopCart-item-text-box {
+  margin-top: 25px;
+  height: 650px;
+  overflow-y: scroll;
+}
+.Mao-shopCart-item-text {
+  width: 100%;
+  margin: 8px 0px;
+  border-bottom: 1px solid #ddd;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Mao-shopCart-item-text > img {
+  width: 150px;
+  height: 150px;
+  margin: 5px auto;
+}
+/* fixed */
+.Mao-total-box-fixed {
+  opacity: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 0;
+  box-shadow: 10px 10px 10px #aaa;
+  border-bottom: 1px solid $grey;
+  background: $white;
+  padding: 6px 0px;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+.Mao-total-box-title-fixed {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0px;
+  margin: 0;
+  margin-right: 15px;
+}
+// total-fixed-內容
+.Mao-total-content-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px;
+}
+// 運費
+.Mao-total-ship-fixed {
+  width: 30%;
+}
+// 活動折扣
+.Mao-total-coupon-fixed {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+//小計
+.Mao-total-sCount-fixed {
+  width: 30%;
+}
+// 選擇折扣券
+.Mao-coupon-choose-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  padding-right: 170px;
+  color: $black;
+}
+.Mao-coupon-choose-fixed:hover {
+  color: $blue;
+}
+.Mao-total-box-fixed .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mao-total-box-fixed .container div {
+  width: 850px;
+}
+
+.Mao-total-box-totalNum-fixed {
+  position: absolute;
+  top: 58%;
+  right: 43%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 200px;
+  border-bottom: 1px solid #ddd;
+}
+.Mao-total-box-title-coupon-fixed {
+  margin: 5px 0px;
+}
+.Mao-total-box-total-fixed-goshop:hover {
+  color: $black;
+}
+.Mao-total-box-total-fixed-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mao-total-box-btn-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $black;
+  width: 80%;
+  height: 45px;
+  border: 1px solid $black;
+  color: $white;
+}
+.Mao-total-box-btn-fixed-goshop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  width: 200px;
+  height: 45px;
+  border: 1px solid $grey;
+  color: $black;
+  top: 50px;
+  position: absolute;
+}
+.Mao-total-box-btn-fixed-goshop:hover {
+  color: $black;
+}
+.Mao-total-box-btn-fixed:hover {
+  color: #eee;
+}
+.Mao-line-sortG {
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  font-weight: bold;
+}
+.Mao-sort-ul {
+  transition: 0.2s;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  font-size: 24px;
+  height: 50%;
+  & li {
+    width: 100%;
+  }
+  & .Mao-line-sort {
+    width: 1px;
+    height: 3px;
+    margin: 0 auto;
+    background: $blue;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  & a {
+    color: $black;
+  }
+  & a:hover {
+    color: $blue;
+  }
+  & li:hover .Mao-line-sort {
+    width: 50%;
+    font-weight: bold;
+    opacity: 1;
+  }
+}
+.Mao-couponBox {
+  overflow: hidden;
+  opacity: 0;
+  width: 620px;
+  box-shadow: 5px 5px 10px #ddd;
+  background: $white;
+  position: fixed;
+  top: calc(50% - 150px);
+  left: calc(50% - 350px);
+  z-index: -10;
+  border: 1px solid $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.Mao-coupon-text-box {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 100%;
+}
+.Mao-coupon-text-box > div {
+  display: flex;
+}
+.Mao-coupon-DOM {
+  margin: 0px 4px;
+  width: 250px;
+}
+.Mao-coupon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: $white;
+  color: $black;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 6px #eee;
+  &:hover {
+    background: $blue;
+    color: $black;
+    font-weight: bold;
+    border: 2px solid $orange;
+  }
+}
+.Mao-coupon-active {
+  background: $blue;
+}
+.Mao-coupon-ullist-img {
+  width: 290px;
+  list-style: none;
+  border-left: 1px solid #ddd;
+  padding: 0px 8px;
+  margin: 0px 10px;
+  height: 450px;
+  overflow-y: scroll;
+}
+.Mao-coupon-list-img {
+  display: flex;
+}
+.Mao-coupon-img {
+  width: 100px;
+  height: 100px;
+}
+.Mao-coupon-exit {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: $black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Mao-ShopCartIcon-box {
+  position: relative;
+}
+.Mao-ShopCartIcon-num {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  background: $blue;
+  color: $white;
+  position: absolute;
+  top: -40%;
+  left: -0.9%;
+}
+.Mao-ShopCarticon-icon {
+  width: 20px;
+  height: 20px;
+}
+.Mao-container-box {
+  width: 850px;
+}
+
+// -------RWD----------------
+
+// @media (max-width: 576px) {
+//   .Mao-total-box{
+//     height: 0;
+//     display: none;
+//     opacity: 0;
+//   }
+//   .Mao-total-box-fixed {
+//     display: none;
+//     opacity: 0;
+//   }
+//   .Mao-total-RWD {
+//     width: 100%;
+//     position: sticky;
+//     bottom: 0;
+//     background: #f90;
+//   }
+//   .Mao-rand-AD{
+//     opacity: 0;
+//     display: none;
+//   }
+//   .Mao-slide {
+//     height: 0;
+//     opacity: 0;
+//   }
+//   .Mao-slideRWD{
+//     opacity: 1;
+//   }
+//   .Mao-productSlide-title {
+//     width:350px;
+//     margin:0px auto;
+//     padding:0;
+//   }
+//   .Mao-slide{
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .chin-commodity-item{
+//     width: 100%;
+//     height: 500px;
+//     margin:25px 0px;
+//   }
+//   .chin-arr{
+//     display: none;
+//   }
+//   .chin-arr2{
+//     display: none;
+//   }
+//   .chin-watchs{
+//     margin:0 auto;
+//     width:350px;
+//     height: 350px;
+//   }
+//   .chin-commodity-item h6{
+//     font-size: 18px;
+//   }
+//   .Mao-container-box{
+//     width:576px
+//   }
+//   .Mao-productSlide-box{
+//     width:576px;
+//   }
+// }

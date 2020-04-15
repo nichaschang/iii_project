@@ -1,0 +1,708 @@
+@import "../../css/variables";
+@import "../../css/main.scss";
+
+a:hover {
+  text-decoration: none;
+}
+.chin-main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chin-section {
+  display: flex;
+  flex-direction: row;
+}
+input[type="checkbox"] {
+  display: none;
+  &:checked + label {
+    .chin-box::before {
+      padding-left: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "\2714";
+      font-size: 0.875rem;
+      color: white;
+      background: #000000;
+    }
+  }
+}
+.chin-label {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+.chin-label:hover {
+  background-color: #c7c7c7;
+}
+.chin-box {
+  position: relative;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.9375rem;
+  background-color: $grey;
+}
+
+/*-----------------------------------------------------商品list Price價格---------------------------------------------------*/
+.chin-commoditylist {
+  margin-right: 17px;
+  width: 300px;
+}
+.chin-slide {
+  height: 0;
+  visibility: hidden;
+}
+.chin-totalprice.active {
+  .chin-slide {
+    height: auto;
+    visibility: visible;
+  }
+  .chin-price img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+}
+.chin-price {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: $font-bold;
+  height: 65px;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: space-between;
+}
+.chin-price img {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.chin-price-input {
+  display: flex;
+  justify-content: space-evenly;
+}
+.chin-price-input input {
+  margin: 20px;
+  width: 100px;
+  height: 35px;
+}
+/*------------------------------------------商品list
+  Brand品牌--------------------------------------------------------------*/
+.chin-price2 {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: $font-bold;
+  height: 65px;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: space-between;
+}
+.chin-price2 img {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.chin-brand ul {
+  height: 0px;
+  visibility: hidden;
+}
+.chin-brand.active {
+  ul {
+    height: auto;
+    visibility: visible;
+  }
+  .chin-price2 img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+}
+/*--------------------------------------商品list  Features功能------------------------------------------------------------------*/
+.chin-price3 {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: $font-bold;
+  height: 65px;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: space-between;
+}
+.chin-price3 img {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.chin-features ul {
+  height: 0px;
+  visibility: hidden;
+}
+.chin-features.active {
+  ul {
+    height: auto;
+    visibility: visible;
+  }
+  .chin-price3 img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+}
+/*------------------------------------------------商品list Discount優惠---------------------------------------------------------*/
+.chin-price4 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: $font-bold;
+  height: 65px;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: space-between;
+}
+.chin-price4 img {
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.chin-discount {
+  label {
+    cursor: context-menu;
+    color: $orange;
+    font-weight: $font-bold;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+.chin-discount.active {
+  .chin-price4 img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+}
+/*-------------------------------------------------CompareProductSort比較產品排序------------------------------------------------------------*/
+.chin-commodity-title {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.chin-title {
+  display: flex;
+  justify-content: space-between;
+}
+/*-------------------------------------------------名子------------------------*/
+.chin-title-text {
+  span {
+    letter-spacing: 2px;
+    margin-left: 15px;
+    line-height: 50px;
+    color: $black;
+    font-size: 22px;
+    font-weight: $font-bold;
+    &:nth-child(2) {
+      margin-left: 44px;
+      font-size: 18px;
+    }
+  }
+}
+/*------------------------------------------------比較跟排序按鍵-----------------------*/
+.chin-comparegoods-sort {
+  display: flex;
+}
+.chin-comparegoods {
+  background: $blue;
+  border: none;
+  color: white;
+  width: 140px;
+  height: 40px;
+  margin: 5px 20px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  span {
+    font-size: 16px;
+  }
+}
+.chin-sort-featuredproducts {
+  position: relative;
+  width: 200px;
+  margin: 5px 10px 0 0;
+}
+.chin-sort-featuredproducts.active {
+  .chin-sort img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+  .chin-featuredproducts {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.chin-sort {
+  position: absolute;
+  right: 0;
+  background: #ddd;
+  border: none;
+  color: $black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 4;
+  span {
+    margin-right: 5px;
+  }
+}
+.chin-sort img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.chin-featuredproducts {
+  list-style: none;
+  text-align: right;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  z-index: 3;
+  box-shadow: 0 0 8px #a0a0a0;
+}
+.chin-featuredproducts li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #ddd;
+  color: $black;
+  padding: 0 30px 0 10px;
+  width: 200px;
+  height: 40px;
+}
+.chin-featuredproducts li:nth-child(1) {
+  margin-top: 45px;
+}
+.chin-featuredproducts li:hover {
+  background: rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------商品頁---------------------------------------------*/
+
+.chin-commodity {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.chin-article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #c7c7c7;
+  z-index: 2;
+}
+.chin-itemcompares {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.chin-compares {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;
+  height: 120px;
+  border-right: 1px solid #050505;
+  position: relative;
+}
+.chin-compares span {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.chin-watch3 {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.chin-x {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+.chin-button-compares {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 120px;
+  padding: 10px 25px;
+}
+.chin-com-a {
+  width: 188px;
+}
+.chin-com-a button {
+  width: 188px;
+}
+.chin-button-compares button:nth-child(2) {
+  margin-top: 16px;
+  padding: 1px 10px;
+  width: 188px;
+  height: 80px;
+  background: none;
+  color: #050505;
+}
+//------------------------------Commoditycomponents2-------------------------
+.chin-zzzzzzzzzz {
+  pointer-events: none;
+}
+.chin-commodity-item-watch {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #0dd2c5;
+  padding: 12px 12px 12px 13px;
+  z-index: 1;
+}
+.chin-commodity-item-watch img {
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+.chin-commodity-item-compare.active {
+  .chin-commodity-item-watch {
+    background: #050505;
+    img {
+      transition: 0.5s;
+      transform: rotate(405deg);
+    }
+  }
+}
+.chin-commodity-item-compare {
+  cursor: pointer;
+  position: relative;
+  margin: 20px 20px 20px 21px;
+  padding-top: 1px;
+  width: 280px;
+  height: 400px;
+  background: $white;
+  transition: 0.3s;
+  z-index: 1;
+  h4 {
+    margin: 0;
+    padding: 15px 20px 10px;
+    font-size: 17px;
+    font-weight: $font-bold;
+    color: $black;
+    text-align: center;
+  }
+}
+.chin-commodity-item-compare h6 {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  font-weight: $font-bold;
+  color: #a0a0a0;
+}
+.chin-commodity-item-compare h5 {
+  font-size: 17px;
+  margin: 0;
+  color: #0dd2c5;
+  text-align: center;
+}
+.chin-commodity-item-compare:hover {
+  box-shadow: 0px 0px 10px #a0a0a0;
+}
+//------------------------------Commoditycomponents-------------------------
+.chin-commodity-item {
+  cursor: pointer;
+  position: relative;
+  margin: 20px 20px 20px 21px;
+  padding-top: 1px;
+  width: 280px;
+  height: 400px;
+  background: $white;
+  transition: 0.3s;
+  z-index: 1;
+  h4 {
+    margin: 0;
+    padding: 15px 20px 10px;
+    font-size: 17px;
+    font-weight: $font-bold;
+    color: $black;
+    text-align: center;
+  }
+}
+.chin-commodity-item h6 {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  font-weight: $font-bold;
+  color: #a0a0a0;
+}
+.chin-commodity-item h5 {
+  font-size: 17px;
+  margin: 0;
+  color: #0dd2c5;
+  text-align: center;
+}
+.chin-commodity-item:hover {
+  box-shadow: 0px 0px 10px #a0a0a0;
+}
+/*-------------------------------------商品星星愛心購物車hover------------------------------------------------------------*/
+.chin-star-heart-bag {
+  list-style: none;
+  display: flex;
+  margin: 25px 0 0 25px;
+  padding: 0;
+  align-items: flex-start;
+  position: relative;
+}
+.chin-star-heart-bag :nth-child(1) > .chin-star {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  color: #ffdd00;
+}
+.chin-commodity-item:hover .chin-star-heart-bag :nth-child(1) > .chin-star {
+  opacity: 1;
+}
+.chin-star-heart-bag :nth-child(2) > .chin-star {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item:hover .chin-star-heart-bag :nth-child(2) > .chin-star {
+  opacity: 1;
+  left: 20px;
+}
+.chin-star-heart-bag :nth-child(3) > .chin-star {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item:hover .chin-star-heart-bag :nth-child(3) > .chin-star {
+  opacity: 1;
+  left: 40px;
+}
+.chin-star-heart-bag :nth-child(4) > .chin-star {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item:hover .chin-star-heart-bag :nth-child(4) > .chin-star {
+  opacity: 1;
+  left: 60px;
+}
+.chin-star-heart-bag :nth-child(5) > .chin-star {
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  color: #ffdd00;
+}
+.chin-commodity-item:hover .chin-star-heart-bag :nth-child(5) > .chin-star {
+  opacity: 1;
+  left: 80px;
+}
+.chin-bag {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 999;
+}
+.chin-commodity-item:hover .chin-bag {
+  opacity: 1;
+  top: 30px;
+}
+.chin-heart {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 8%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 2;
+}
+.chin-commodity-item:hover .chin-heart {
+  opacity: 1;
+}
+.chin-watchs {
+  margin: 20px 35px 15px 35px;
+  width: 210px;
+  height: 210px;
+}
+.chin-heart-bag {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------------------------------------------圓圈--------------------------------------------------------------*/
+.circle {
+  display: flex;
+  justify-content: center;
+}
+.circle1 {
+  width: 58px;
+  height: 58px;
+  border: 1px solid $black;
+  border-radius: 50%;
+  background: $black;
+  margin: 168px 0 189px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle3 {
+  width: 5px;
+  height: 5px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  background: $white;
+  margin: 2px;
+}
+/*--------------RWD------------------*/
+
+@import "../../css/variables";
+@import "../../css/main.scss";
+.chin-rwd-sort-features {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .chin-title-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .chin-title-text span:nth-child(1) {
+    font-size: 22px;
+    margin: 0 auto;
+  }
+  .chin-title-text span:nth-child(2) {
+    margin: 0 auto;
+  }
+  .chin-rwd-sort-features {
+    display: flex;
+    justify-content: space-between;
+  }
+  .chin-rwd-features {
+    background: $white;
+    color: #050505;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 159px;
+    height: 42px;
+  }
+  .chin-rwd-sort {
+    background: $white;
+    color: #050505;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    width: 159px;
+    height: 42px;
+  }
+  .chin-comparegoods {
+    margin-left: 20px;
+  }
+  .chin-commoditylist {
+    display: none;
+  }
+  .chin-title {
+    flex-direction: column;
+  }
+  .chin-comparegoods-sort {
+    display: none;
+  }
+  .chin-commodity {
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .chin-commodity-item {
+    background: #fff;
+    width: 160px;
+    height: 260px;
+    margin: 0 0 30px 0;
+  }
+  .chin-commodity-item h6 {
+    margin-top: 10px;
+    font-size: 8px;
+  }
+  .chin-commodity-item h4 {
+    padding: 10px 15px 15px 15px;
+    font-size: 12px;
+  }
+  .chin-commodity-item h5 {
+    font-size: 14px;
+  }
+  .chin-commodity-item p {
+    margin-top: 10px;
+    font-size: $font-xs;
+  }
+  .chin-watchs {
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+  }
+  .chin-commodity-item:hover {
+    box-shadow: unset !important;
+  }
+  .chin-star-heart-bag :nth-child(1) > .chin-star {
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+  }
+  .chin-star {
+    display: none;
+  }
+  .chin-bag {
+    display: none;
+  }
+  .chin-heart {
+    position: absolute;
+    top: 0;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+}
